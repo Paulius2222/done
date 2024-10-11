@@ -1,0 +1,75 @@
+
+        body {
+            display: flex;                 /* Use flexbox layout */
+            flex-direction: column;        /* Stack children vertically */
+            align-items: center;           /* Center horizontally */
+            justify-content: flex-start;   /* Align items to the top */
+            height: 98vh;                 /* Full viewport height */
+            margin: 0;  
+            color: black/* Remove default margin */
+        }
+
+        #output {
+            margin-top: 20px;              /* Space between button and text */
+            font-size: 24px;               /* Font size for output text */
+            color: white; 
+            /* Text color */
+        }
+
+        button {
+            margin-top: 20px;              /* Space above the button */
+            padding: 10px 20px;            /* Padding for the button */
+            font-size: 16px;               /* Font size for button text */
+            cursor: pointer;      
+            color: black;/* Change cursor on hover */
+        }
+    
+
+
+
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+body {
+            margin: 0;
+            height: 100vh; /* Ensure the body takes up full height */
+            background-image: url("https://www.zmo.ai/wp-content/uploads/2023/09/geometric-Blue-Wallpaper-Free-Download-scaled.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+}
+
+.pulsate {
+    margin-top: 20px; /* Space from the top */
+    animation: pulse 3s infinite; /* Increase animation duration to 3 seconds */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Start and end at normal size */
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up slightly */
+        opacity: 0.8; /* Slightly transparent */
+    }
+}
+.my-heading {
+    font-size: 36px; /* Change this value to make the text larger */
+    margin-top: 20px; /* Keep your existing margin */
+}

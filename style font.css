@@ -1,0 +1,19 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            background-color: #282c34; /* Background color for contrast */
+        }
+
+        img {
+            width: 300px; /* Adjust the size of the image */
+            height: auto; /* Maintain aspect ratio */
+            opacity: 0; /* Start as invisible */
+            transition: opacity 2s ease-in; /* Transition effect for opacity */
+        }
+
+        img.fade-in {
+            opacity: 1; /* Fully visible when class is added */
+        }

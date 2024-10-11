@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Project-style.css" />
+
+        <title>Training for beginners</title>
+        <style>
+            #output {
+                margin-top: 20px;
+                font-size: 24px;
+                color: white;
+        </style>
+    </head>
+
+    <body>
+        <h1 class="pulsate" style="margin-top: px">Training for beginners</h1>
+        <h1 class="pulsate" style="margin-top: 5px"></h1>
+
+        <h2>
+            <a
+                href="project2.html"
+                class="tekst"
+                style="color: white; text-align: center; display: inline-block; width: 48%">
+                <img
+                    src="https://images.squarespace-cdn.com/content/v1/551476dfe4b00e32840be79b/1462909038089-P40BP7FR9RTG6OHDSD1R/image-asset.jpeg?format=500w"
+                    alt="why start"
+                    style="width: 240px; height: 200px; border: 2px solid white;"   />
+                <br />
+                why start
+            </a>
+
+            <a
+                href="project1.html"
+                class="tekst"
+                style="color: white; text-align: center; display: inline-block; width: 48%">
+            <img
+                    src="https://www.primehv.com/wp-content/uploads/2024/02/chest-pain.jpg "
+                    alt="The benefits"
+                    style="width: 240px; height: 200px; border: 2px solid white;"   />
+                <br />
+                The benefits
+            </a>
+        </h2>
+
+        <h3>
+            <a
+                href="project3.html"
+                class="tekst"
+                style="color: white; text-align: center; display: inline-block; width: 48%">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloIMhyIKkxzlvBHyfu2sZJjzAREEH5KuC8Q&s"
+                    alt="The beggining"
+                    style="width: 240px; height: 200px; border: 2px solid white;"  />
+                <br />
+                The begginign
+            </a>
+            <a
+                href="project4.html"
+                class="tekst"
+                style="color: white; text-align: center; display: inline-block; width: 48%">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0v3FrZTe4nAVfWG5aL_ZaUWMmqk7ZDqtqZg&s"
+                    alt="consistency"
+                    style="width: 240px; height: 200px; border: 2px solid white;"   />
+                <br />
+                consistency
+            </a>
+        </h3>
+
+        <button id="myButton">Health Benefits!</button>
+        <div id="output">Health benefits!</div>
+
+        <script>
+            const texts = [
+                "Weight Management: Regular training helps maintain a healthy weight and prevents obesity!",
+                "Improved Mood: Exercise releases endorphins, reducing stress and enhancing overall mood!",
+                "Stronger Heart: Consistent training strengthens the heart, improving cardiovascular health!",
+                "Increased Energy: Regular physical activity boosts energy levels and reduces fatigue!",
+                "Enhanced Longevity: Engaging in regular training can increase lifespan and improve overall quality of life!"
+            ];
+
+            let currentIndex = 0;
+
+            document.getElementById("myButton").addEventListener("click", function () {
+                // Display the next text in the array
+                document.getElementById("output").innerText = texts[currentIndex];
+
+                currentIndex++;
+
+                if (currentIndex >= texts.length) {
+                    currentIndex = 0;
+                }
+            });
+        </script>
+    </body>
+</html>
